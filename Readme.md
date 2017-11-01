@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Иван Веселов](https://up.htmlacademy.ru/htmlcss/19/user/406853).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
