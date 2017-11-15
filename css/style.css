@@ -1,0 +1,276 @@
+@font-face {
+	font-family: "PTSans";
+	src: url("/fonts/PTSans.woff2") format("woff2"),
+    url("/fonts/PTSans.woff") format("woff");
+}
+body {
+	font-family: "PTSans", "Arial", "Sans-serif"
+	font-size: 14px;
+	line-height: 26px;
+	font-style: normal;
+	color: black;
+}
+
+.site-navigation a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a:hover {
+	color: #81b3d2;
+}
+
+.site-navigation a:active {
+	color: #cacaca;
+}
+
+.promo h2 {
+	font-size: 21px;
+	color: black;
+	font-weight: bold;
+}
+
+.promo p {
+	color: #333333;
+}
+
+.desc {
+	width: 400px;
+	height: 400px;
+	background-color: #82b3d2;
+}
+
+.desc h2 {
+	font-size: 21px;
+	line-height: 21px;
+	color: white;
+}
+
+.desc span {
+	line-height: 21px;
+	color: white;
+}
+
+.desc p {
+	line-height: 21px;
+	color: white;
+}
+
+.features h2 {
+	line-height: 21px;
+	font-size: 21px;
+	font-weight: bold;
+	color: black;
+}
+
+.features p {
+	line-height: 21px;
+	color: #333333;
+}
+
+.desc-places {
+	width: 400px;
+	height: 400px;
+	background-color: #82b3d2;
+}
+
+.desc-places h2 {
+	line-height: 21px;
+	font-size: 21px;
+	color: white;
+	font-weight: bold;
+}
+
+.desc-places span {
+	line-height: 21px;
+	color: white;
+}
+
+.desc-places p {
+	line-height: 21px;
+	color: white;
+}
+
+.features span {
+	line-height: 21px;
+	color: #333333;
+}
+
+.features h3 {
+	line-height: 21px;
+	color: #333333;
+}
+
+.dates h2 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+.dates p {
+	line-height: 24px;
+	color: #333333;
+}
+
+.dates a {
+	font-size: 21px;
+	color: white;
+	font-weight: bold;
+}
+
+.date-in,
+.date-out,
+.old,
+.children {
+	font-weight: bold;
+}
+
+.find {
+	font-size: 21px;
+	font-weight: bold;
+	color: white;
+}
+
+.hashtag a {
+	font-size: 21px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+.social a {
+	text-decoration: none;
+}
+
+.social-list {
+	list-style: none;
+}
+
+input:disabled {
+	color: 6a6a6a;
+}
+
+.main-navigation a.current {
+	color: #766357;
+}
+
+.btn-hover:hover {
+	background-color: white;
+	color: black;
+}
+
+.sort a {
+	text-decoration: none;
+	color: #b2b2b2;
+}
+
+.sort a.current-cost {
+	color: #81b3d2;
+}
+
+
+.sort ul {
+	list-style: none;
+}
+
+.sort a:hover {
+	color: #81b3d2;
+}
+
+.sort a:active {
+	color: black;
+}
+
+.info a {
+	text-decoration: none;
+}
+
+.info a:hover {
+	color: #81b3d2;
+}
+
+.info a:active {
+	color: #b2b2b2;
+}
+
+.info h1 a{
+	color: black;
+}
+
+button.details {
+	background-color: #81b3d2;
+}
+
+button a {
+	color: white;
+}
+
+button.details:hover {
+	background-color: #669ec0;
+}
+
+.details a:hover {
+	color: white;
+}
+
+button.details:active {
+	background-color: #5496bd;
+}
+
+.details a:active {
+	color: #88b6d1;
+}
+
+button.ordering {
+	background-color: #766357;
+}
+
+button.ordering:hover {
+	background-color: #604e43;
+}
+
+.ordering a:hover {
+	color: white;
+}
+
+button.ordering:active {
+	background-color: #503e33;
+}
+
+.ordering a:active {
+	color: #857871;
+}
+
+.social ul {
+	list-style: none;
+}
+
+.social svg {
+	background-color: #81b3d2;
+	color: white;
+}
+
+.social svg:hover {
+	background-color: #669ec0;
+}
+
+.social svg:active {
+	background-color: #5496bd;
+}
+
+.footer-logo svg {
+	color: black;
+}
+
+.footer-logo svg:hover {
+	color: #81b3d2;
+}
+
+.footer-logo svg:active {
+	color: #bdbbbc;
+}
