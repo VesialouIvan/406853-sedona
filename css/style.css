@@ -1,10 +1,13 @@
 @font-face {
 	font-family: "PTSans";
-	src: url("/fonts/PTSans.woff2") format("woff2"),
-    url("/fonts/PTSans.woff") format("woff");
+	src: url("../fonts/PTSans.woff2") format("woff2"),
+    url("../fonts/PTSans.woff") format("woff"),
+    url("../fonts/ptsansbold.woff") format("woff"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
 }
+
 body {
-	font-family: "PTSans", "Arial", "Sans-serif"
+	font-family: "PTSans", "Arial", "Sans-serif";
 	font-size: 14px;
 	line-height: 26px;
 	font-style: normal;
@@ -198,7 +201,7 @@ input:disabled {
 	color: #b2b2b2;
 }
 
-.info h1 a{
+.info a{
 	color: black;
 }
 
