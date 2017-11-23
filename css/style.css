@@ -296,18 +296,30 @@ button.ordering:active {
 
 .site-navigation {
 	display: flex;
-	justify-content: space-between;
 	margin: 0;
 	padding: 0;
 	padding-top: 19px;
 	padding-bottom: 19px;
 	text-transform: uppercase;
-}
-
-.main-navigation {
-	position: relative;
 	padding-left: 72px;
 	padding-right: 72px;
+}
+
+.site-navigation li {
+	width: 20%;
+	text-align: left;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-right: 211px;
+}
+
+.site-navigation li:nth-child(3) {
+	text-align: right;
+}
+
+.site-navigation li:nth-child(4) {
+	text-align: right;
 }
 
 .main-header-logo {
@@ -320,6 +332,7 @@ button.ordering:active {
 .promo {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .promo h2 {
@@ -327,10 +340,7 @@ button.ordering:active {
 	margin: auto;
 	padding-bottom: 39px;
 	width: 450px;
-}
-
-.promo p {
-	margin-left: 355px;
+	text-align: center;
 }
 
 .advantages {
@@ -371,6 +381,14 @@ button.ordering:active {
 	display: flex;
 	list-style: none;
 	flex-direction: row;
+	padding: 0;
+	padding-top: 20px;
+	margin: 0;
+}
+
+.features-list p {
+	width: 400px;
+	text-align: center;
 }
 
 .features-list li {
@@ -386,12 +404,19 @@ button.ordering:active {
 }
 
 .features-list h2 {
-	padding-bottom: 32px;
+	padding-bottom: 26px;
 	margin: 0;
+}
+
+.features-list h3 {
+	width: 400px;
+	text-align: center;
 }
 
 .places {
 	display: flex;
+	margin: 0;
+	padding: 0;
 }
 
 .places img {
@@ -479,10 +504,150 @@ button.ordering:active {
 	padding-left: 230px;
 }
 
-.
+.container {
+	margin: 0 auto;
+}
 
+.form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
 
+.infra {
+	display: flex;
+	flex-direction: column;
+	padding-left: 72px;
+	width: 240px;
+	margin: 0;
+}
 
+.type {
+	display: flex;
+	flex-direction: column;
+	width: 240px;
+}
 
+.value {
+	display: flex;
+	flex-direction: column;
+	width: 328px;
+	padding-right: 72px;
+}
+
+.section-found {
+	display: flex;
+	flex-direction: row;
+	border-bottom: solid #e5e5e5 2px;
+}
+
+.found {
+	padding-left: 72px;
+	margin-right: 50px;
+}
+
+.sort {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+
+.sort span {
+	text-align: center;
+	margin-right: 40px;
+}
+
+.sort-list li:nth-child(1) {
+	margin-right: 33px;
+
+}
+
+.sort-list li:nth-child(2) {
+	margin-right: 33px;
+}
+
+.order ul {
+	list-style: none;
+}
+
+.sort ul {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+}
+
+.order ul {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+	padding-right: 72px;
+}
+
+.hotels {
+	display: flex;
+	flex-direction: column;
+}
+
+.amara {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: solid #e5e5e5 2px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+}
+
+.desert {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: solid #e5e5e5 2px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+}
+
+.villas {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: solid #e5e5e5 2px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+}
+
+.hotels img {
+	padding-left: 72px;
+}
+
+.rating {
+	padding-right: 72px;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	width: 260px;
+	text-align: left;
+}
+
+.type-value {
+	display: flex;
+	flex-direction: row;
+	width: 182px;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+}
+
+.type-value span:nth-child(1) {
+	margin-right: 40px;
+}
+
+.buttons a:nth-child(1) {
+	margin-right: 6px;
+}
 
 
