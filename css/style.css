@@ -48,6 +48,10 @@ body {
 	color: #cacaca;
 }
 
+.greetings {
+	height: 508px;
+}
+
 .promo h2 {
 	font-size: 21px;
 	color: black;
@@ -298,8 +302,8 @@ button.ordering:active {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	padding-top: 19px;
-	padding-bottom: 19px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	text-transform: uppercase;
 	padding-left: 72px;
 	padding-right: 72px;
@@ -311,7 +315,9 @@ button.ordering:active {
 }
 
 .site-navigation li:nth-child(2) {
-	margin-right: 211px;
+	margin-right: 150px;
+	width: 20%;
+	margin-left: 30px;
 }
 
 .site-navigation li:nth-child(3) {
@@ -320,6 +326,7 @@ button.ordering:active {
 
 .site-navigation li:nth-child(4) {
 	text-align: right;
+	margin-left: 32px;
 }
 
 .main-header-logo {
@@ -336,15 +343,21 @@ button.ordering:active {
 }
 
 .promo h2 {
-	padding-top: 59px;
+	padding-top: 60px;
 	margin: auto;
-	padding-bottom: 39px;
+	padding-bottom: 16px;
 	width: 450px;
 	text-align: center;
+	text-transform: uppercase;
+}
+
+.promo p {
+	text-transform: uppercase;
+	margin-top: 11px;
 }
 
 .advantages {
-	padding-top: 56px;
+	padding-top: 37px;
 	display: flex;
 }
 
@@ -353,23 +366,26 @@ button.ordering:active {
 	flex-direction: column;
 	height: 257px;
 	align-items: center;
+	text-transform: uppercase;
 }
 
 .desc h2 {
-	padding-top: 50px;
+	padding-top: 47px;
+	text-align: center;
 	width: 126px;
 	margin: 0;
 }
 
 .desc span {
-	padding-top: 29px;
+	padding-top: 24px;
 	margin: 0;
 }
 
 .desc p {
-	padding-top: 32px;
+	padding-top: 20px;
 	margin: 0;
-	width: 260px;
+	width: 290px;
+	text-align: center;
 }
 
 .picture img {
@@ -384,11 +400,15 @@ button.ordering:active {
 	padding: 0;
 	padding-top: 20px;
 	margin: 0;
+	padding-bottom: 60px;
 }
 
 .features-list p {
-	width: 400px;
+	width: 290px;
 	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	margin-top: 5px;
 }
 
 .features-list li {
@@ -396,27 +416,59 @@ button.ordering:active {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
+	margin-top: 27px;
+	width: 400px;
 }
 
 .features-list img {
-	padding-bottom: 32px;
+	padding-bottom: 28px;
 	margin: 0;
 }
 
 .features-list h2 {
-	padding-bottom: 26px;
+	padding-bottom: 20px;
 	margin: 0;
+	text-transform: uppercase;
+	width: 115px;
+	text-align: center;
 }
 
 .features-list h3 {
 	width: 400px;
 	text-align: center;
+	text-transform: uppercase;
+	width: 270px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	margin: 0;
+	padding-top: 21px;
+}
+
+.features-li{
+	line-height: 20px;
+}
+
+.feature-second ul {
+	padding-bottom: 40px;
+}
+
+.food {
+	padding-top: 5px;
+	padding-right: 2px;
+}
+
+.home {
+	padding-top: 5px;
 }
 
 .places {
 	display: flex;
 	margin: 0;
 	padding: 0;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 21px;
 }
 
 .places img {
@@ -435,18 +487,18 @@ button.ordering:active {
 }
 
 .desc-places h2 {
-	padding-top: 50px;
+	padding-top: 46px;
 	margin: 0;
 	width: 155px;
 }
 
 .desc-places span {
-	padding-top: 29px;
+	padding-top: 24px;
 	margin: 0;
 }
 
 .desc-places p {
-	padding-top: 32px;
+	padding-top: 21px;
 	margin: 0;
 	width: 310px;
 }
@@ -463,14 +515,34 @@ button.ordering:active {
 
 .dates h2 {
 	text-transform: uppercase;
-	padding-top: 52px;
+	padding-top: 50px;
 	margin: 0;
 }
 
 .dates p {
 	margin: 0;
-	padding-top: 38px;
+	padding-top: 24px;
 	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 45px;
+}
+
+.dates button {
+	background-color: #766357;
+	height: 86px;
+	width: 568px;
+}
+
+.dates a {
+	text-decoration: none;
+}
+
+form {
+	display: none;
+}
+
+iframe {
+	display: none;
 }
 
 .footer {
@@ -483,8 +555,13 @@ button.ordering:active {
 .hashtag {
 	text-transform: uppercase;
     width: 400px;
-    margin-top: 46px;
+    margin-top: 38px;
     margin-bottom: 48px;
+}
+
+.hashtag a {
+	padding-left: 60px;
+	padding-bottom: 50px;
 }
 
 .social {
@@ -494,6 +571,9 @@ button.ordering:active {
 .social-list {
 	display: flex;
 	flex-direction: row;
+	margin: 0;
+	margin-top: 12px;
+	margin-bottom: 14px;
 }
 
 .social-list ul {
@@ -502,12 +582,12 @@ button.ordering:active {
 }
 
 .social-list li:nth-child(1) {
-	padding-left: 30px;
-	margin-right: 3px;
+	padding-left: 36px;
+	margin-right: 5px;
 }
 
 .social-list li:nth-child(2) {
-	margin-right: 3px;
+	margin-right: 5px;
 }
 
 .visually-hidden {
@@ -519,11 +599,14 @@ button.ordering:active {
 	flex-direction: row;
 	margin: 0;
 	width: 400px;
+	margin-bottom: 5px;
 }
 
 .footer-logo span {
-	margin-left: 120px;
+	margin-left: 78px;
 	margin-right: 2px;
+	font-size: 20px;
+	padding-top: 6px;
 }
 
 .container {
