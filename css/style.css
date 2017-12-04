@@ -669,7 +669,7 @@ iframe {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-bottom: 9px;
+	padding-bottom: 6px;
 }
 
 .infra {
@@ -731,7 +731,7 @@ iframe {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 30px;
   vertical-align: top;
   cursor: pointer;
 }
@@ -740,6 +740,7 @@ iframe {
 .price-controls .max-price {
   width: 90px;
   padding-left: 65px;
+  height: 30px;
 }
 
 .price-controls input {
@@ -749,6 +750,7 @@ iframe {
   font: inherit;
   background: none;
   border: none;
+  height: 30px;
 }
 
 .range-controls {
@@ -821,7 +823,7 @@ iframe {
 .value h3 {
 	margin: 0;
 	margin-top: 24px;
-	margin-bottom: 20px;
+	margin-bottom: 23px;
 }
 
 .form input[type="checkbox"] {
@@ -831,7 +833,8 @@ iframe {
 .form .checkbox-label {
 	padding-left: 40px;
 	position: relative;
-	padding-bottom: 20px;
+	margin-bottom: 25px;
+	line-height: 21px;
 }
 
 .form .checkbox-label::before {
@@ -907,13 +910,20 @@ iframe {
 	border-bottom: 1px dotted #81b3d2;
 }
 
+.sort-list li:nth-child(2):active {
+	border:0;
+}
+
+.sort-list li:nth-child(3):active {
+	border:0;
+}
+
 .sort-list a:hover {
 	color: #81b3d2;
 }
 
 .sort-list a:active {
 	color: #000000;
-	list-style: none;
 }
 
 .sort ul {
@@ -938,6 +948,49 @@ iframe {
 	margin-left: 12px;
 }
 
+.icon-dir:hover path {
+	fill: #231f20;
+}
+
+.icon-dir:active path,
+.icon-dir.active path {
+	fill: #81b3d2;
+}
+
+.rating {
+	display: flex;
+	flex-direction: column;
+}
+
+.rating-amara,
+.rating-desert,
+.rating-villas {
+	margin:0;
+	margin-top: 28px;
+	margin-bottom: 48px;
+}
+
+.rating-amara {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 90px;
+	margin-left: 20px;
+}
+
+.rating-desert {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 66px;
+	margin-left: 44px;
+}
+
+.rating-villas {
+	margin-left: 70px;
+	margin-bottom: 38px;
+}
+
 .hotels {
 	display: flex;
 	flex-direction: column;
@@ -946,6 +999,7 @@ iframe {
 .hotel {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	border-bottom: solid #e5e5e5 1px;
 	padding-bottom: 22px;
 	padding-left: 72px;
@@ -959,9 +1013,14 @@ iframe {
 }
 
 .rating span {
-	width: 200px;
-	background-color: #f2f2f2;
 	text-transform: uppercase;
+}
+
+.rating .rating-star {
+	height: 28px;
+	width: 110px;
+	background-color: #f2f2f2;
+	text-align: center;
 }
 
 .info {
@@ -970,11 +1029,13 @@ iframe {
 	width: 780px;
 	text-align: left;
 	margin-top: 24px;
+	margin-right: 21px;
+	line-height: 27px;
 }
 
 .info h1 {
 	margin-top: 0;
-	margin-bottom: 5px;
+	margin-bottom: 3px;
 	text-transform: uppercase;
 	font-size: 20px;
 }
@@ -995,7 +1056,7 @@ iframe {
 
 .buttons button {
 	width: 110px;
-	height: 28px;
+	height: 27px;
 	border: none;
 }
 
