@@ -50,6 +50,7 @@ body {
 
 .greetings {
 	height: 508px;
+	background-color: #5e656b;
 }
 
 .promo h2 {
@@ -199,6 +200,34 @@ body {
 	background: url("../img/youtube.svg") no-repeat;
 	width: 20px;
 	height: 16px;
+}
+
+.twitter a:hover {
+	background-color: #669ec0;
+}
+
+.facebook a:hover {
+	background-color: #669ec0;
+}
+
+.youtube a:hover {
+	background-color: #669ec0;
+}
+
+.twitter a:active {
+    background-color: #5496bd;
+}
+
+.twitter a:active::before {
+	opacity: 0.3;
+}
+
+.facebook a:active::before {
+	opacity: 0.3;
+}
+
+.youtube a:active::before {
+	opacity: 0.3;
 }
 
 .social li {
@@ -431,6 +460,7 @@ button.ordering:active {
 .picture img {
 	height: 256px;
 	width: 800px;
+	background-color: #865f56;
 }
 
 .features-list {
@@ -519,6 +549,10 @@ button.ordering:active {
 	line-height: 0;
 }
 
+.picture-places img {
+	background-color: #ecc2ab;
+}
+
 .desc-places {
 	display: flex;
 	flex-direction: column;
@@ -588,14 +622,22 @@ form {
 }
 
 iframe {
-	display: none;
+	width: 1200px;
+	height: 592px;
+	background: url("../img/map.jpg") no-repeat;
 }
 
 .footer {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-left: 72px;
+	padding-left: 72px;
+}
+
+.footer-transparent {
+	margin-top: -120px;
+	background-color: white;
+	opacity: 0.9;
 }
 
 .hashtag {
@@ -658,7 +700,7 @@ iframe {
 }
 
 .maps {
-	height: 472px;
+	height: 592px;
 }
 
 .container {
@@ -741,6 +783,10 @@ iframe {
   width: 90px;
   padding-left: 65px;
   height: 30px;
+}
+
+.price-controls .max-price {
+  padding-left: 55px;
 }
 
 .price-controls input {
@@ -871,7 +917,7 @@ iframe {
 }
 
 .found {
-	margin-right: 22px;
+	margin-right: 18px;
 	width: 147px;
 	text-transform: uppercase;
 }
@@ -887,21 +933,22 @@ iframe {
 	text-align: center;
 	text-transform: uppercase;
 	margin-top: 32px;
-	width: 851px;
+	width: 856px;
 	font-size: 10px;
 }
 
 .sort span {
 	text-align: center;
-	margin-right: 48px;
+	margin-right: 39px;
+	font-size: 12px;
 }
 
 .sort-list li:nth-child(1) {
-	margin-right: 40px;
+	margin-right: 32px;
 }
 
 .sort-list li:nth-child(2) {
-	margin-right: 42px;
+	margin-right: 33px;
 	border-bottom: 1px dotted #81b3d2;
 }
 
@@ -931,7 +978,8 @@ iframe {
 	flex-direction: row;
 	margin: 0;
 	padding: 0;
-	width: 743px;
+	width: 748px;
+	font-size: 12px;
 }
 
 .order ul {
@@ -1037,7 +1085,8 @@ iframe {
 	margin-top: 0;
 	margin-bottom: 3px;
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 21px;
+	font-weight: bold;
 }
 
 .type-value {
@@ -1062,6 +1111,8 @@ iframe {
 
 .buttons a {
 	color: white;
+	font-weight: bold;
+	font-size: 14px;
 }
 
 .buttons a:hover {
@@ -1120,6 +1171,6 @@ iframe {
 }
 
 .form {
-	background: url(../img/filter-background.jpg) 50% 50% no-repeat ;
+	background: #343c3e url(../img/filter-background.jpg) 50% 50% no-repeat ;
 }
 
