@@ -27,7 +27,7 @@ body {
 .container {
 	width: 1200px;
 	background-color: #fff;
-	box-shadow: 5px 0 15px 0 #818181;
+	box-shadow: 5px 0 15px 0 #f2f2f2;
 }
 
 .site-navigation a {
@@ -145,6 +145,24 @@ body {
 	font-size: 21px;
 	color: white;
 	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #766357;
+	width: 568px;
+	border: none;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.dates a:hover {
+	background-color: #604e43;
+	color: #fff;
+}
+
+.dates a:active {
+	background-color: #503e33;
+	color: #928a85;
 }
 
 .date-in,
@@ -343,28 +361,12 @@ button.ordering:active {
 	height: 48px;
 }
 
-.social svg {
-	color: white;
-}
-
-.social svg:hover {
-	background-color: #669ec0;
-}
-
-.social svg:active {
-	background-color: #5496bd;
-}
-
-.footer-logo svg {
-	color: black;
-}
-
 .footer-logo svg:hover {
-	color: #81b3d2;
+	fill: #81b3d2;
 }
 
 .footer-logo svg:active {
-	color: #bdbbbc;
+	fill: #bdbbbc;
 }
 
 .site-navigation {
@@ -601,30 +603,194 @@ button.ordering:active {
 	padding-bottom: 46px;
 }
 
-.dates button {
-	background-color: #766357;
-	height: 86px;
+
+.form-index {
+	display: inline-block;
+	text-transform: uppercase;
 	width: 568px;
+	height: 396px;
+	box-shadow: 0px 10px 5px 5px #ededed;
+}
+
+.form-index input[type="text"] {
+	width: 306px;
+	height: 38px;
 	border: none;
+	background-color: #f2f2f2;
 }
 
-.dates a {
-	text-decoration: none;
-	text-transform: uppercase;
+.date-in {
+	display: flex;
+	flex-direction: row;
+	margin-top: 54px;
+	margin-bottom: 26px;
+
 }
 
+.date-in label {
+	margin-right: 24px;
+	line-height: 42px;
+}
 
-form {
-	display: none;
-	padding-bottom: 20px;
+.date-out label {
+	margin-right: 21px;
+	line-height: 40px;
+}
+
+.quantity input[type="text"] {
+	width: 34px;
+}
+
+.old,
+.coming-old {
+	display: flex;
+}
+
+.children,
+.coming-children {
+	display: flex;
+}
+
+.coming-date {
+	display: flex;
+}
+
+.date-out {
+	display: flex;
+	margin-bottom: 28px;
+}
+
+.leaving-date {
+	display: flex;
+}
+
+.date-in label,
+.date-out label {
+	margin-left: 55px;
+}
+
+.quantity {
+	margin-left: 55px;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 52px;
+}
+
+.old label {
+	margin-right: 41px;
+	line-height: 40px;
+}
+
+.find-hotel input {
+	width: 458px;
+	height: 58px;
+	border: none;
+	background-color: #81b3d2;
+	color: #fff;
 	text-transform: uppercase;
-	color:white;
+	font-size: 21px;
+	font-weight: bold;
+	margin-left: 56px;
+}
+
+.find-hotel input:hover {
+	background-color: #669ec0;
+}
+
+.find-hotel input:active {
+	background-color: #5496bd;
+	color: #94b9d2;
+}
+
+.coming-date {
+	position: relative;
+}
+
+.leaving-date {
+	position: relative;
+}
+
+.coming-date input {
+	padding-right: 40px;
+}
+
+.leaving-date input {
+	padding-right: 40px;
+}
+
+.coming-date button {
+	position: absolute;
+	right: 4px;
+	bottom: 6px;
+	cursor: pointer;
+	border: none;
+	background: transparent;
+}
+
+.leaving-date button {
+	position: absolute;
+	right: 4px;
+	bottom: 6px;
+	cursor: pointer;
+	border: none;
+	background: transparent;
+}
+
+.coming-old,
+.coming-children {
+	position: relative;
+}
+
+.coming-old input,
+.coming-children input {
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+.old-minus,
+.children-minus {
+	position: absolute;
+	left: 8px;
+	bottom: 15px;
+	cursor: pointer;
+	border: none;
+	background: transparent;
+}
+
+.old-plus,
+.children-plus {
+	position: absolute;
+	right: 8px;
+	bottom: 11px;
+	cursor: pointer;
+	border: none;
+	background: transparent;
+}
+
+.children label {
+	margin-left: 54px;
+	margin-right: 27px;
+	line-height: 40px;
+}
+
+.coming-date svg,
+.leaving-date svg {
+	fill: #cacaca;
+}
+
+.coming-date svg:hover,
+.leaving-date svg:hover {
+	fill: #000000;
+}
+
+.coming-date svg:active,
+.leaving-date svg:active {
+	fill: #81b3d2;
 }
 
 iframe {
 	width: 1200px;
 	height: 592px;
-	background: url("../img/map.jpg") no-repeat;
 }
 
 .footer {
@@ -701,13 +867,14 @@ iframe {
 
 .maps {
 	height: 592px;
+	background: url("../img/map.jpg") no-repeat;
 }
 
 .container {
 	margin: 0 auto;
 }
 
-.form {
+.form-catalog {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -720,6 +887,8 @@ iframe {
 	padding-left: 72px;
 	width: 190px;
 	margin: 0;
+	text-transform: uppercase;
+	color: #fff;
 }
 
 .type {
@@ -727,6 +896,8 @@ iframe {
 	flex-direction: column;
 	width: 240px;
 	margin-right: 178px;
+	text-transform: uppercase;
+	color: #fff;
 }
 
 .type h3 {
@@ -872,18 +1043,18 @@ iframe {
 	margin-bottom: 23px;
 }
 
-.form input[type="checkbox"] {
+.form-catalog input[type="checkbox"] {
 	display: none;
 }
 
-.form .checkbox-label {
+.form-catalog .checkbox-label {
 	padding-left: 40px;
 	position: relative;
 	margin-bottom: 25px;
 	line-height: 21px;
 }
 
-.form .checkbox-label::before {
+.form-catalog .checkbox-label::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -893,7 +1064,7 @@ iframe {
 	background: url("../img/checkbox-off.svg") no-repeat;	
 }
 
-.form input[type="checkbox"]:checked+label::after {
+.form-catalog input[type="checkbox"]:checked+label::after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -903,8 +1074,8 @@ iframe {
 	background: url("../img/checkbox-on.svg") no-repeat;	
 }
 
-.form input[type="checkbox"]:disabled+label::after,
-.form input[type="checkbox"]:disabled+label::before {
+.form-catalog input[type="checkbox"]:disabled+label::after,
+.form-catalog input[type="checkbox"]:disabled+label::before {
 	opacity: 0.3;
 }
 
@@ -1103,58 +1274,40 @@ iframe {
 	padding-right: 50px;
 }
 
-.buttons button {
+.buttons .about {
 	width: 110px;
 	height: 27px;
-	border: none;
-}
-
-.buttons a {
-	color: white;
-	font-weight: bold;
-	font-size: 14px;
-}
-
-.buttons a:hover {
-	color: white;
-}
-
-.buttons button:nth-child(1) {
 	background-color: #81b3d2;
-	margin-right: 6px;
+	text-align: center;
+	color: #fff;
 }
 
-.buttons button:nth-child(1):hover {
+.buttons .about:hover {
 	background-color: #669ec0;
+	color: #fff;
 }
 
-.buttons button:nth-child(1):active {
+.buttons .about:active {
 	background-color: #5496bd;
-}
-
-.buttons a:nth-child(1):active {
 	color: #94b9d2;
 }
 
-.buttons button:nth-child(2n) {
-	background-color: #766357;
+.buttons .reserve {
 	width: 142px;
+	height: 27px;
+	background-color: #766357;
+	text-align: center;
+	color: #fff;
 }
 
-.buttons button:nth-child(2n):hover {
+.buttons .reserve:hover {
 	background-color: #604e43;
+	color: #fff;
 }
 
-.buttons button:nth-child(2n):active {
+.buttons .reserve:active {
 	background-color: #503e33;
-}
-
-.buttons a:nth-child(2n):active {
 	color: #928a85;
-}
-
-.buttons a {
-	text-transform: uppercase;
 }
 
 .type-value span {
@@ -1170,7 +1323,22 @@ iframe {
 	margin-right: 6px;
 }
 
-.form {
+.old-minus svg,
+.children-minus svg {
+	fill: #a9a9a9;
+}
+
+.coming-old svg:hover,
+.coming-children svg:hover {
+	fill: #000000;
+}
+
+.coming-old svg:active,
+.coming-children svg:active {
+	fill: #81b3d2;
+}
+
+.form-catalog {
 	background: #343c3e url(../img/filter-background.jpg) 50% 50% no-repeat ;
 }
 
