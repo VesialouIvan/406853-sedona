@@ -587,6 +587,7 @@ button.ordering:active {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
 }
 
 .dates h2 {
@@ -609,12 +610,24 @@ button.ordering:active {
 	text-transform: uppercase;
 	width: 568px;
 	height: 396px;
-	box-shadow: 0px 10px 5px 5px #ededed;
+	position: absolute;
+	top: 290px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+}
+
+.form-index-hide {
+	display: none;
+}
+
+.form-index-show {
+	display: inline-block;
 }
 
 .form-index input[type="text"] {
-	width: 306px;
-	height: 38px;
+	width: 294px;
+	height: 36px;
 	border: none;
 	background-color: #f2f2f2;
 }
@@ -638,7 +651,11 @@ button.ordering:active {
 }
 
 .quantity input[type="text"] {
-	width: 34px;
+	width: 114px;
+	padding-left: 37px;
+	padding-right: 37px;
+	box-sizing: border-box;
+	text-align: center;
 }
 
 .old,
@@ -657,7 +674,7 @@ button.ordering:active {
 
 .date-out {
 	display: flex;
-	margin-bottom: 28px;
+	margin-bottom: 30px;
 }
 
 .leaving-date {
@@ -673,12 +690,18 @@ button.ordering:active {
 	margin-left: 55px;
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 52px;
+	margin-bottom: 53px;
 }
 
 .old label {
-	margin-right: 41px;
-	line-height: 40px;
+	margin-right: 42px;	
+	line-height: 36px;
+}
+
+.children label {
+	margin-left: 54px;
+	margin-right: 27px;
+	line-height: 36px;
 }
 
 .find-hotel input {
@@ -690,7 +713,7 @@ button.ordering:active {
 	text-transform: uppercase;
 	font-size: 21px;
 	font-weight: bold;
-	margin-left: 56px;
+	margin-left: 55px;
 }
 
 .find-hotel input:hover {
@@ -712,10 +735,18 @@ button.ordering:active {
 
 .coming-date input {
 	padding-right: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-left: 12px;
+	font-size: 14px;
 }
 
 .leaving-date input {
 	padding-right: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-left: 12px;
+	font-size: 14px;
 }
 
 .coming-date button {
@@ -741,36 +772,105 @@ button.ordering:active {
 	position: relative;
 }
 
+
 .coming-old input,
 .coming-children input {
-	padding-right: 40px;
-	padding-left: 40px;
+	padding-right: 38px;
+	padding-left: 38px;
+	outline: 2px solid #f2f2f2;
+}
+
+.coming-old input:focus,
+.coming-children input:focus {
+	outline: 2px solid #f2f2f2;
+	outline: none;
+}
+
+
+.old-plus::before,
+.children-plus::before {
+	content: "";
+	position: absolute;
+	background: url(../img/plus-black.png) no-repeat;
+	width: 11px;
+	height: 11px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0.3;
+}
+
+.old-plus:hover::before,
+.children-plus:hover::before {
+	opacity: 1;
 }
 
 .old-minus,
 .children-minus {
 	position: absolute;
-	left: 8px;
-	bottom: 15px;
+	left: 0px;
+	bottom: 0px;
 	cursor: pointer;
 	border: none;
-	background: transparent;
+	background: #f2f2f2;
+	width: 38px;
+	height: 36px;
 }
+
+.old-minus::before,
+.children-minus::before {
+	content: "";
+	position: absolute;
+	background: url(../img/minus-black.png) no-repeat;
+	width: 11px;
+	height: 3px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0.3;
+}
+
+.old-minus:hover::before,
+.children-minus:hover::before {
+	opacity: 1;
+}
+
+.old-plus:active::after,
+.children-plus:active::after {
+	content: "";
+	position: absolute;
+	background: url(../img/plus-blue.png) no-repeat;
+	width: 11px;
+	height: 11px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.old-minus:active::after,
+.children-minus:active::after {
+	content: "";
+	position: absolute;
+	background: url(../img/minus-blue.png) no-repeat;
+	width: 11px;
+	height: 3px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
 
 .old-plus,
 .children-plus {
 	position: absolute;
-	right: 8px;
-	bottom: 11px;
+	right: 0px;
+	bottom: 0px;
 	cursor: pointer;
 	border: none;
 	background: transparent;
-}
-
-.children label {
-	margin-left: 54px;
-	margin-right: 27px;
-	line-height: 40px;
+	width: 38px;
+	height: 36px;
+	background-color: #f2f2f2;
 }
 
 .coming-date svg,
@@ -1330,15 +1430,33 @@ iframe {
 
 .coming-old svg:hover,
 .coming-children svg:hover {
-	fill: #000000;
+	
 }
+
 
 .coming-old svg:active,
 .coming-children svg:active {
-	fill: #81b3d2;
+	
+}
+
+.coming-date input:hover,
+.leaving-date input:hover,
+.coming-old input:hover,
+.coming-children input:hover {
+	background-color: #ebebeb;
+}
+
+.coming-date input:focus,
+.leaving-date input:focus,
+.coming-old input:focus,
+.coming-children input:focus {
+	background-color: #fff;
+	border: 2px solid #e5e5e5;
 }
 
 .form-catalog {
 	background: #343c3e url(../img/filter-background.jpg) 50% 50% no-repeat ;
 }
+
+
 
