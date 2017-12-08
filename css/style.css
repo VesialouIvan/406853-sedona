@@ -780,6 +780,12 @@ button.ordering:active {
 .coming-children input {
 	width: 38px;
 	box-sizing: border-box;
+	position: absolute;
+	left: 38px;
+	top: 0;
+	height: 38px;
+	border: 2px solid #f2f2f2;
+	background-color: #f2f2f2;
 }
 
 .coming-old input:focus,
@@ -867,6 +873,8 @@ button.ordering:active {
 	height: 38px;
 	background-color: #f2f2f2;
 	border: 2px solid #f2f2f2;
+	box-sizing: border-box;
+	font-size: 0;
 }
 
 .old-plus:hover,
@@ -888,6 +896,8 @@ button.ordering:active {
 	border:2px solid #f2f2f2;
 	width: 38px;
 	height: 38px;
+	box-sizing: border-box;
+	font-size: 0;
 }
 
 .coming-date svg,
@@ -1480,8 +1490,6 @@ iframe {
 	background-color: #fff;
 	border: 2px solid #e5e5e5;
 	outline: none;
-}
-
 }
 
 .form-catalog {
