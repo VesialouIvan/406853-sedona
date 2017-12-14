@@ -64,25 +64,46 @@ body {
 }
 
 .desc {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
 	width: 400px;
-	height: 400px;
 	background-color: #82b3d2;
+	padding-top: 47px;
+	padding-bottom: 12px;
 }
 
 .desc h2 {
 	font-size: 21px;
 	line-height: 21px;
 	color: white;
+	text-align: center;
+	width: 126px;
+	margin: 0;
+	margin-bottom: 24px;
+	font-weight: bold;
 }
 
 .desc span {
 	line-height: 21px;
 	color: white;
+	margin: 0;
+	margin-bottom: 20px;
 }
 
 .desc p {
 	line-height: 21px;
 	color: white;
+	margin: 0;
+	width: 290px;
+	text-align: center;
+}
+
+.features {
+	padding-top: 56px;
+	padding-bottom: 80px;
 }
 
 .features h2 {
@@ -99,8 +120,9 @@ body {
 
 .desc-places {
 	width: 400px;
-	height: 400px;
 	background-color: #82b3d2;
+	padding-top: 46px;
+	padding-bottom: 20px;
 }
 
 .desc-places h2 {
@@ -108,16 +130,23 @@ body {
 	font-size: 21px;
 	color: white;
 	font-weight: bold;
+	margin: 0;
+	width: 155px;
+	margin-bottom: 24px;
 }
 
 .desc-places span {
 	line-height: 21px;
 	color: white;
+	margin: 0;
+	margin-bottom: 21px;
 }
 
 .desc-places p {
 	line-height: 21px;
 	color: white;
+	margin: 0;
+	width: 310px;
 }
 
 .features span {
@@ -389,6 +418,7 @@ button.ordering:active {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 37px;
 }
 
 .promo h2 {
@@ -406,35 +436,8 @@ button.ordering:active {
 }
 
 .advantages {
-	padding-top: 37px;
 	display: flex;
-}
-
-.desc {
-	display: flex;
-	flex-direction: column;
-	height: 256px;
-	align-items: center;
-	text-transform: uppercase;
-}
-
-.desc h2 {
-	padding-top: 47px;
-	text-align: center;
-	width: 126px;
-	margin: 0;
-}
-
-.desc span {
-	padding-top: 24px;
-	margin: 0;
-}
-
-.desc p {
-	padding-top: 20px;
-	margin: 0;
-	width: 290px;
-	text-align: center;
+	background-color: #81b3d2;
 }
 
 .picture img {
@@ -448,9 +451,9 @@ button.ordering:active {
 	list-style: none;
 	flex-direction: row;
 	padding: 0;
-	padding-top: 20px;
 	margin: 0;
-	padding-bottom: 60px;
+	vertical-align: top;
+	align-items: flex-start;
 }
 
 .features-list p {
@@ -458,7 +461,6 @@ button.ordering:active {
 	text-align: center;
 	text-transform: uppercase;
 	margin: 0;
-	margin-top: 5px;
 }
 
 .features-list li {
@@ -466,18 +468,18 @@ button.ordering:active {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	margin-top: 27px;
 	width: 400px;
+	vertical-align: top;
 }
 
 .features-list img {
-	padding-bottom: 28px;
 	margin: 0;
+	margin-bottom: 28px;
 }
 
 .features-list h2 {
-	padding-bottom: 21px;
 	margin: 0;
+	margin-bottom: 26px;
 	text-transform: uppercase;
 	width: 115px;
 	text-align: center;
@@ -503,6 +505,18 @@ button.ordering:active {
 	padding-bottom: 40px;
 }
 
+.features-second-list h2 {
+	margin-bottom: 22px;
+}
+
+.features-second-list h3 {
+	padding: 0;
+}
+
+.features-second-list span {
+	margin-bottom: 20px;
+}
+
 .food {
 	padding-top: 5px;
 	padding-right: 2px;
@@ -518,7 +532,7 @@ button.ordering:active {
 	padding: 0;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 21px;
+	background-color: #81b3d2;
 }
 
 .places img {
@@ -533,32 +547,21 @@ button.ordering:active {
 	background-color: #ecc2ab;
 }
 
+.picture {
+	height: 256px;
+	max-height: 100%;
+}
+
 .desc-places {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 257px;
-}
-
-.desc-places h2 {
-	padding-top: 46px;
-	margin: 0;
-	width: 155px;
-}
-
-.desc-places span {
-	padding-top: 24px;
-	margin: 0;
-}
-
-.desc-places p {
-	padding-top: 21px;
-	margin: 0;
-	width: 310px;
 }
 
 .features-second {
 	background-color: #eeeeee;
+	padding-top: 47px;
+	padding-bottom: 58px;
 }
 
 .dates {
@@ -584,7 +587,6 @@ button.ordering:active {
 
 
 .form-index {
-	display: inline-block;
 	text-transform: uppercase;
 	width: 568px;
 	height: 396px;
@@ -599,8 +601,24 @@ button.ordering:active {
 	display: none;
 }
 
+@keyframes bounce { 
+	0% { 
+		top: 740px; 
+	}
+	70% { 
+		top: 290px; 
+	} 
+	90% { 
+		top: 280px; 
+	} 
+	to { 
+		top: 290px; 
+	} 
+} 
+
 .form-index-show {
-	display: inline-block;
+	display: block;
+	animation: bounce 0.5s;
 }
 
 .date-in input[type="text"],
@@ -1103,7 +1121,8 @@ iframe {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
